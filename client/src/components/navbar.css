@@ -1,0 +1,44 @@
+
+nav{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #010100;
+    color:#E99C1A;
+    margin-top: 15px;
+    
+}
+
+.menu{
+    list-style: none;
+    width:40%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 19px;
+
+}
+
+.menu li{
+    display:inline-block;
+    padding:10px;
+}
+
+#logo{
+    object-fit: scale-down;
+
+}
+
+.help{
+    color:#010100;
+    background-color:#C71E07;
+    scale: 1.5;
+    margin-left:5px;
+    
+}
+
+body{
+    background-color: #010100;
+}
+

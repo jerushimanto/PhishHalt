@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: inline;
+  font-size: 3em; /* Adjusted for better readability */
+}
+
+.description {
+  font-size: 1.5em; /* Adjust font size for better readability */
+  line-height: 1.5;
+  margin-top: 15px;
+  color: #E0E0E0; /* Light grey for contrast with white */
+  text-align: justify;
+  max-width: 475px; /* Limit the width of the paragraph */
+}
+
+.context-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); 
+  gap: 10px;
+  margin-top: 30px;
+  height: 500px;
+}
+
+#item1 {
+  overflow: hidden;
+  max-width: 500px; /* Keep the image within this width */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.item_abc {
+  padding: 20px;
+  text-align: center;
+  max-width: 500px; /* Ensure item2 content does not exceed 500px */
+  margin: auto; /* Center the item */
+}
+.item {
+  text-align: center;
+  max-width: 600px; /* Ensure item2 content does not exceed 500px */
+  margin: auto; /* Center the item */
+  padding-right:50px;
+}
+#buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 15%; 
+}
+
+.context-buttons {
+  color: #010100;
+  background-color: #C71E07;
+  scale: 1.5;
+  margin-left: 5px;
+  height: 40px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.context-buttons:hover {
+  background-color: #A31705;
+}

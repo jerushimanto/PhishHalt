@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .head0 {
+    font-size: 3em; /* Adjusted for better readability */
+    text-decoration: underline;
+  }
+  .head1 {
+    display: inline;
+    font-size: 3em; /* Adjusted for better readability */
+  }
+  .head2 {
+    display: inline;
+    font-size: 2.5em; /* Adjusted for better readability */
+  }
+  .inf{
+    margin-left: 100px;
+    padding: 30px;
+    padding-left: 90px;
+  }
+  
+  
