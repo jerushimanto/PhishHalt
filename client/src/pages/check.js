@@ -19,15 +19,7 @@ const Check = () => {
     const [toggle,settog] = useState(false);
     const [error, seterror] = useState(false);
     const [intial,setinit] = useState(true);
-    
-<<<<<<< HEAD
-
-    
-
-    const CheckURL = async(url) => {
-        try {
-=======
-    
+         
     
 
     const CheckURL = async(url) => {
@@ -38,7 +30,6 @@ const Check = () => {
         
         try {
             
->>>>>>> main
             const response = await fetch(`http://127.0.0.1:8000/checkurl?url=${currurl}`, {
               method: "POST",
               headers: {
@@ -54,11 +45,7 @@ const Check = () => {
             setresult(await response.json());
             setpop(true);
             settog(!toggle);
-<<<<<<< HEAD
-=======
-            // Reload the page after updating the state
-        
->>>>>>> main
+
           } catch (error) {
             console.error('Fetch error:', error);
             seterror(true);
@@ -75,10 +62,6 @@ const Check = () => {
 
 
     const renderParagraphs = () => {
-<<<<<<< HEAD
-=======
-
->>>>>>> main
         if(pop){
             if( 40 <= result  && result < 60){
                 setimg(img3) ;
