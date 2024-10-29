@@ -20,11 +20,17 @@ const Check = () => {
     const [error, seterror] = useState(false);
     const [intial,setinit] = useState(true);
     
-
+    
     
 
     const CheckURL = async(url) => {
+        
+        setTimeout(() => {
+        window.location.reload(); // This will reload the page after the changes
+        }, 5000);
+        
         try {
+            
             const response = await fetch(`http://127.0.0.1:8000/checkurl?url=${currurl}`, {
               method: "POST",
               headers: {
@@ -40,6 +46,8 @@ const Check = () => {
             setresult(await response.json());
             setpop(true);
             settog(!toggle);
+            // Reload the page after updating the state
+        
           } catch (error) {
             console.error('Fetch error:', error);
             seterror(true);
@@ -56,6 +64,7 @@ const Check = () => {
 
 
     const renderParagraphs = () => {
+
         if(pop){
             if( 40 <= result  && result < 60){
                 setimg(img3) ;

@@ -52,29 +52,23 @@ Ensure you have the following installed on your system:
 
 5. **Install model**:
 
-   After getting access to the model, add it to /server and start server
+   After getting access to the model, add it to ../server
 
 ### Running the Application
 
-Once the dependencies are installed, you can start the development server and client using below command:
+Once the dependencies are installed, you can start client using below command:
 
    ```bash
    npm start
    ```
-
-This will start the application on **localhost**.
-By default, server should be available at `http://localhost:3005/`. 
-By default, client should be available at `http://localhost:3000/`.
-
-### Building the Application
-
-To create an optimized production build:
-
+Next start the the development server using 
    ```bash
-   npm run build
+   uvicorn model:app --reload
    ```
 
-This will output the build files to the `build` directory, which can then be deployed to a web server.
+This will start the application on **localhost**.
+By default, server should be available at `http://localhost:8000/`. 
+By default, client should be available at `http://localhost:3000/`.
 
 ## Usage
 
